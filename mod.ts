@@ -38,7 +38,8 @@ const defaultDelayFunction = <T>(item: T): number => {
     if (typeof item === "number") return item;
     if (typeof item === "string") return item.length;
     throw new Error(
-        "Default delay function only supports numbers and strings. Provide a custom delayFunction for other types."
+        "Default delay function only supports numbers and strings," +
+            "please provide a custom delayFunction for other types."
     );
 };
 
